@@ -7,4 +7,4 @@ class MessagesSerializer(ModelSerializer):
 
     class Meta:
         model = Message
-        fields = ['content', 'views_count']
+        fields = ['id', 'content', 'views_count']
