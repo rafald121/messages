@@ -133,10 +133,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-DJANGO_SUPERUSER_USERNAME = 'admin'
-DJANGO_SUPERUSER_PASSWORD = 'adminadmin'
-DJANGO_SUPERUSER_EMAIL = 'qwe@gmail.com'
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
