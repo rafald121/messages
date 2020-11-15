@@ -1,3 +1,4 @@
+from rest_framework import permissions
 from rest_framework.permissions import DjangoModelPermissions
 from rest_framework.viewsets import ModelViewSet
 
@@ -9,7 +10,7 @@ class MessagesViewSet(ModelViewSet):
 
     serializer_class = MessagesSerializer
     queryset = Message.objects.all()
-    permission_classes = [DjangoModelPermissions, ]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]
 
     def update(self, request, *args, **kwargs):
         message = self.get_object()
